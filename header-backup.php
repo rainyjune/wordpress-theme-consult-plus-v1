@@ -24,16 +24,25 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'consult-plus-v1' ); ?></a>
-	<div class="site-top">
-		<div class="content">
-			<span class="label">Email :</span> info@consultplus.com <span>|</span>  <span class="label">Phone :</span> +91 5685 666
-		</div>
-	</div>
+
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
-			?>
+			if ( is_front_page() && is_home() ) :
+				?>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<?php
+			else :
+				?>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<?php
+			endif;
+			$consult_plus_v1_description = get_bloginfo( 'description', 'display' );
+			if ( $consult_plus_v1_description || is_customize_preview() ) :
+				?>
+				<p class="site-description"><?php echo $consult_plus_v1_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+			<?php endif; ?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
