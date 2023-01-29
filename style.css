@@ -1088,14 +1088,15 @@ textarea {
 }
 
 .our-steps .content {
-  width: 1140px;
+  overflow: hidden;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
 /* Featured projects */
 
 .featured-projects {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -1105,6 +1106,7 @@ textarea {
   background-color: #03b6e7;
   height: 524px;
   padding: 90px 0;
+  overflow: hidden;
 }
 
 .testimonials .content {
@@ -1135,7 +1137,7 @@ textarea {
 /* contact us */
 
 .contact-us {
-  width: 1140px;
+  max-width: 1140px;
   margin: 95px auto;
 }
 .contact-us .columns {
@@ -1160,7 +1162,7 @@ footer.site-footer {
 }
 
 footer.site-footer .site-info {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
