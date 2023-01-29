@@ -991,12 +991,31 @@ textarea {
 .columns {
   display: flex;
   justify-content: space-between;
+  height: 100%;
+}
+
+@media screen and (max-width: 37.5em) {
+  .site-header {
+    height: auto !important;
+  }
+
+  .main-navigation {
+    align-items: flex-start !important;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .about-us .right {
+    height: 15.9375rem;
+  }
 }
 
 .site-header {
-  width: 1140px;
+  max-width: 1140px;
   margin: 30px auto;
   display: flex;
+  overflow: hidden;
+  height: 42px;
 }
 
 .custom-logo-link img {
@@ -1023,22 +1042,41 @@ textarea {
 }
 
 .main-navigation ul {
-  gap: 40px;
+  gap: 2em;
 }
 
 /* About us */
 
-.about-us {
-  width: 1140px;
-  margin: 0 auto;
-  height: 260px;
+@media screen and (max-width: 50rem) {
+  .about-us .left {
+    width: 100% !important;
+  }
+  .about-us .right {
+    display: none;
+    width: 0 !important;
+  }
 }
 
-.about-us .columns > div {
-  width: 50%;
+.about-us {
+  max-width: 69.375rem;
+  margin: 6rem auto;
+  min-height: 15.9375rem;
+}
+
+.about-us .columns {
+  gap: 3rem;
+}
+
+.about-us .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
 }
 
 .about-us .right {
+  flex-shrink: 0;
+  width: 28.625rem;
   background-image: url(images/talk.png);
 }
 

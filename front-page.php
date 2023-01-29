@@ -13,6 +13,7 @@ get_header();
     <div class="left">
       <div class="heading">About us</div>
       <p>apfbx dsafdsa apfbx dsafdsa apfbx dsafdsa apfbx dsafdsa apfbx dsafdsapfbx dsafdsa apfbx dsafdsapfbx dsafdsa apfbx dsafdsapfbx dsafdsa apfbx dsafdsapfbx dsafdsa apfbx dsafdsa </p>
+      <button>Read more</button>
     </div>
     <div class="right"></div>
   </div>
