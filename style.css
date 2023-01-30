@@ -1082,15 +1082,88 @@ textarea {
 
 /* Steps */
 
+.content .heading {
+  font-size: 14px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  text-align: left;
+  display: inline-block;
+}
+
+.content .heading .top {
+  font-size: 0.875rem;
+  color: #898e8f;
+}
+
+.content .heading .main {
+  font-size: 2rem;
+  color: #343a3b;
+  display: block;
+  line-height: 1;
+}
+
 .our-steps {
   background-color: #e7eff1;
-  height: 504px;
+  font-size: 0.9375rem;
+  padding: 1em;
+}
+
+.our-steps .columns {
+  flex-direction: column;
+  font-size: 0.875rem;
+  margin-top: 1.6em;
 }
 
 .our-steps .content {
   overflow: hidden;
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.our-steps .order {
+  font-size: 1.25rem;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-family: "Myriad Pro";
+  color: rgb(22, 212, 40);
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.our-steps h4 {
+  font-size: 1.125rem;
+  font-family: "Montserrat";
+  color: rgb(52, 58, 59);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.833;
+  text-align: left;
+}
+
+.our-steps .intro {
+  font-size: 0.9375rem;
+  font-family: "Myriad Pro";
+  color: rgb(131, 139, 140);
+  line-height: 1.867;
+  text-align: left;
+}
+
+.our-steps .box img {
+  width: 3.875rem;
+  height: 3.875rem;
+}
+
+@media screen and (min-width: 57rem) {
+  .our-steps {
+    padding: 6.2em 0;
+  }
+  .our-steps .columns {
+    flex-direction: row;
+  }
+  .our-steps .box {
+    width: 19rem;
+    min-height: 16rem;
+  }
 }
 
 /* Featured projects */

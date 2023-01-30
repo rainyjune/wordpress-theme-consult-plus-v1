@@ -21,8 +21,27 @@ get_header();
 
 <div class="our-steps">
   <div class="content">
-    <div class="heading">Steps</div>
-    <div class="columns"></div>
+    <div class="heading"><span class="top">Our</span><span class="main">Steps</span></div>
+    <div class="columns">
+      <div class="box">
+        <img src="<?php echo get_template_directory_uri();?>/images/Icon_choose_industary.png" />
+        <p class="order">01</p>
+        <h4>Choose your industry</h4>
+        <p class="intro">Lorem Ipsum is simply dummy text of the printing and typesettin</p>
+      </div>
+      <div class="box">
+        <img src="<?php echo get_template_directory_uri();?>/images/icon_choose_service.png" />
+        <p class="order">02</p>
+        <h4>Choose your service</h4>
+        <p class="intro">Lorem Ipsum is simply dummy text of the printing and typesettin</p>
+      </div>
+      <div class="box">
+        <img src="<?php echo get_template_directory_uri();?>/images/icon_boost_your_business.png" />
+        <p class="order">03</p>
+        <h4>Boost your business</h4>
+        <p class="intro">Lorem Ipsum is simply dummy text of the printing and typesettin</p>
+      </div>
+    </div>
   </div>
 </div>
 
