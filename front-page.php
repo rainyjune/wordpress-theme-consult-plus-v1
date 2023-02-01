@@ -47,9 +47,27 @@ get_header();
 
 <div class="featured-projects">
   <div class="heading">
-  Projects
+    <span class="top">Featured</span>
+    <span class="main">Projects</span>
   </div>
-  <div class="projects-grid"></div>
+  <div class="projects-grid">
+    <div>
+      <div class="bg">Banking</div>
+      <div class="shape"></div>
+    </div>
+    <div>
+      <div class="bg">Technology</div>
+      <div class="shape"></div>
+    </div>
+    <div>
+      <div class="bg">Technology</div>
+      <div class="shape"></div>
+    </div>
+    <div>
+      <div class="bg">Real estate</div>
+      <div class="shape"></div>
+    </div>
+  </div>
   <div><button>Full Projects</button></div>
 </div>
 
